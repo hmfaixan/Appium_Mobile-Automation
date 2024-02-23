@@ -32,8 +32,7 @@ public class BaseTest {
 				.withIPAddress("127.0.0.1").usingPort(4723).build();
 		options = new UiAutomator2Options();
 		options.setDeviceName("MyPhone");
-		options.setApp(
-				"C:\\Users\\Faizan\\Desktop\\Eclipse Folder\\Appium\\src\\test\\java\\resources\\ApiDemos-debug.apk");
+		options.setApp("C:\\Users\\Faizan\\Desktop\\Eclipse Folder\\Appium\\src\\test\\java\\resources\\General-Store.apk");
 		service.start();
 
 		driver = new AndroidDriver(new URL("http://127.0.0.1:4723"), options);
@@ -69,7 +68,6 @@ public class BaseTest {
 			    "endY", 585
 			));
 	}
-	
 	@AfterClass
 	public void TearDown() {
 		driver.quit();
